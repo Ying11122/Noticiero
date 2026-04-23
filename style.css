@@ -20,10 +20,6 @@ header{
     text-align: center;
 } */
 
-main{
-    flex-wrap: wrap;
-    
-}
 
 .nav-list{
     background-color: #448051;
@@ -54,6 +50,7 @@ a:hover{
 main{  
     background-color:   #448051;
     display: flex;
+    
     margin: auto;
     text-align: justify;
 }
@@ -66,6 +63,7 @@ main{
 
 p{
     line-height: 1,6px;
+    margin-top: 15px;
 }
 
 section{
@@ -81,7 +79,7 @@ section{
     display: flex;
     align-items: center;  /*Para centrar la imagen con el texto*/
     gap: 15px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .texto-noticia1{
