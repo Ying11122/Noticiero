@@ -37,12 +37,12 @@ header{
 }
 
 .nav-list li a:hover{
-    color: rgb(179, 91, 59);
+    color: rgb(156, 77, 46);
     transition: all 0.3s ease;
 }
 
 a:hover{
-    color: rgb(179, 91, 59);
+    color: rgb(12, 107, 43);
     transition: all 0.3s ease;
 }
 
@@ -117,7 +117,7 @@ a{
 
 }
 
-.internacional1{
+.internacional{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,12 +125,6 @@ a{
     
 }
 
-.internacional2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
 
 .img-internacional{
     height: 300px;
