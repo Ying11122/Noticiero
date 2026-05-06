@@ -7,7 +7,7 @@
 
 header{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 160px;
+    font-size: 180px;
     text-align: center;
 }
 
@@ -15,6 +15,12 @@ header{
     /* https://grabient.com/HQJgbAjANKEKwxABmsOBOALDMB2EOAHNqAMxiKFIyma5TUjBJZSbASHpA?style=linearSwatches */
     height: 230px;
     background:linear-gradient(90deg, #d2a64c 0.000%, #d2a64c 7.692%, #e69c4d calc(7.692% + 1px), #e69c4d 15.385%, #ea954f calc(15.385% + 1px), #ea954f 23.077%, #dd9252 calc(23.077% + 1px), #dd9252 30.769%, #c59257 calc(30.769% + 1px), #c59257 38.462%, #aa955c calc(38.462% + 1px), #aa955c 46.154%, #979c63 calc(46.154% + 1px), #979c63 53.846%, #93a66b calc(53.846% + 1px), #93a66b 61.538%, #a0b374 calc(61.538% + 1px), #a0b374 69.231%, #b9c37f calc(69.231% + 1px), #b9c37f 76.923%, #d4d68a calc(76.923% + 1px), #d4d68a 84.615%, #e6ed97 calc(84.615% + 1px), #e6ed97 92.308%, #e9ffa4 calc(92.308% + 1px) 100.000%);
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
 /* .menu-horizontal{
@@ -48,6 +54,9 @@ a:hover{
     transition: all 0.3s ease;
 }
 
+div{
+    flex-wrap: wrap;
+}
 
 main{  
     background-color:   #448051;
@@ -73,6 +82,7 @@ p{
     line-height: 1,6px;
     margin-top: 15px;
     font-size: 24px;
+    overflow-wrap: break-word;
 }
 
 section{
@@ -237,8 +247,24 @@ tr:nth-child(odd) td:nth-child(even){
     background-color: rgb(229, 207, 173);
 }
 
-@media (max-width: <=480px) {
-    .columna-contenido{
+@media (max-width: 768px) {
+    header{
+        font-size: 100px;
         flex-direction: column;
+    }
+    
+    .nav-list{
+        flex-direction: column;
+        
+    }
+    main{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    .tabla-responsive{
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
     }
 }
